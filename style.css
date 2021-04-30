@@ -14,9 +14,7 @@ body {
 }
 
 .owl-carousel {
-  padding: 10% 10%;
-  align-items: center;
-  justify-items: center;
+  overflow: hidden;
 }
 
 .item {
@@ -32,8 +30,6 @@ body {
 }
 
 .h3 {
-  display: flex;
-  justify-content: center;
   text-transform: uppercase;
   font-size: 30px;
   margin-bottom: 20px;
@@ -59,4 +55,9 @@ body {
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
+}
+@media screen and (max-width: 800px) {
+  .item {
+    flex-direction: column;
+  }
 }
